@@ -1,0 +1,305 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 0.6em;
+  }
+
+  p {
+    font-size: 0.4em;
+  }
+
+  .l-p {
+    font-size: 1em;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    min-height: 0;
+  }
+
+  header {
+    display: none;
+    width: 100%;
+    height: 68px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hdr-cntnr {
+    width: 100%;
+    min-width: 0;
+    height: 60%;
+  }
+
+  .nav-cntnr {
+    width: 100%;
+    min-width: 0;
+    height: 40%;
+    justify-content: space-around;
+  }
+
+  .nav-lmnt {
+    padding: 0 25px;
+    height: 100%;
+  }
+
+  .lndng-cntnr {
+    height: 100vh;
+    max-height: 500px;
+  }
+
+  .row-sect {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .l-row {
+    width: calc(100% - 40px);
+    min-height: 0;
+    height: calc(500px - 42px);
+    padding: 20px;
+    border-top: 2px solid var(--rich-black);
+    border-right: 0;
+    position: absolute;
+  }
+
+  .r-row {
+    width: calc(100% - 50px);
+    min-height: 0;
+    height: calc(500px - 102px);
+    padding: 50px 25px;
+    left: 0%;
+    top: 500px;
+    border-left: 0;
+    position: relative;
+  }
+
+  .sky-row {
+    width: calc(100% - 50px);
+    min-height: 0;
+    height: calc(500px - 52px);
+    padding: 25px;
+    left: 100%;
+    border-left: 0;
+    position: relative;
+  }
+
+  .sky-row p {
+    font-size: 0.5em;
+  }
+
+  .txt-cntnr {
+    margin: 0 0 0 5%;
+  }
+
+  .r-row-col-hdn {
+    min-width: 40%;
+  }
+
+  .r-row-col-txt {
+    min-width: 60%;
+  }
+
+  .row-shrink {
+    left: -100%;
+  }
+
+  .row-unshrink {
+    left: 0%;
+  }
+
+
+
+
+
+
+  .cs-sect {
+    height: 100vh;
+  }
+
+  .cs-cntnr {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .cs-cntnr-hide {
+    left: 100%;
+  }
+
+  .cs-lmnt-col-s {
+    width: 100%;
+    height: 40%;
+  }
+
+  .cs-lmnt-col-l {
+    width: 100%;
+    height: 40%;
+  }
+
+  .cs-txt-cntnr {
+    width: calc(100% - 20px);
+    padding: 10px 0 0 10px;
+  }
+
+  .cs-txt-cntnr > h3 {
+    font-size: 1em;
+  }
+
+  .cs-lmnt-s {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .cs-lmnt-l {
+    width: 100%;
+    height: 50vw;
+  }
+
+
+
+
+  .cs-pg-cvr {
+    display: none;
+  }
+
+  .cs-box {
+    width: 100%;
+    left: -100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge, remove scrollbar */
+    scrollbar-width: none;  /* Firefox, remove scrollbar */
+  }
+
+  .cs-box::-webkit-scrollbar {
+    display: none; /* Safari and Chrome, remove scrollbar */
+  }
+
+  .cs-box-open {
+    left: 0%;
+  }
+
+  .cs-vid-cntnr {
+    width: 90%;
+    min-height: 0;
+    margin: 75px auto auto;
+    padding: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .cs-vid-progress-cntnr {
+    width: 100%;
+    height: auto;
+    margin: -25px 0 0;
+    display: flex;
+  }
+
+  .cs-vid-progress-blue {
+    width: 0%;
+    height: 2px;
+    margin: 25px 0 0;
+    transition: width 0.1s linear;
+    background-color: var(--sky-blue);
+  }
+
+  .cs-vid-progress-black {
+    width: 100%;
+    height: 2px;
+    margin: 25px 0 0;
+    transition: width 0.1s linear;
+    background-color: var(--rich-black);
+  }
+
+  .cs-info-cntnr {
+    width: 80%;
+    min-height: auto;
+    margin: 25px auto;
+  }
+
+  .cs-img-cntnr {
+    width: 80%;
+    min-height: 300px;
+    margin: 50px auto 75px auto;
+  }
+
+  .sticky-row {
+    display: none;
+  }
+
+  .scroll-row {
+    width: calc(100% - 50px);
+    border-left: 0;
+    padding: 0 25px;
+  }
+
+  .about-txt-cntnr {
+    min-height: 90vh;
+    height: 0;
+  }
+
+
+  .ftr-cntr-lmnt {
+    display: none;
+  }
+
+  .ftr-blog-cntnr {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+    height: 200px;
+  }
+
+  .cntct-txt > p {
+    font-size: 0.7em;
+  }
+
+  .cntct-hdn > h3 {
+    font-size: 1em;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1275px) {
+
+}
