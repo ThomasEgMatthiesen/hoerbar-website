@@ -1,0 +1,36 @@
+#ntrCover {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background-color: #0D111C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeCover 2s ease 3s 1 forwards;
+}
+
+#ntrLogo {
+  width: 20%;
+  height: auto;
+  opacity: 0;
+  filter: invert(100%);
+  mix-blend-mode: difference;
+  animation: fadeLogo 4.75s ease-in-out .25s 1 forwards;
+}
+
+@keyframes fadeLogo {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeCover {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/*
+--alabaster: #F2EEE3;
+--rich-black: #0D111C;
+--sky-blue: #A9B9DB;
+--gold-brown: #564624;
+*/
