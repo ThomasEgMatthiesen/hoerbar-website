@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/*****************************/
+/*********** FONTS ***********/
+/*****************************/
+
+h1, h2, h3, p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+:root {
+  --rb-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px;
+  --lt-box-shadow: -1px -1px #000, -2px -2px #000, -3px -3px #000, -4px -4px #000, -5px -5px #000, -6px -6px #000;
+  --box-transform-one: translateX(8px) translateY(8px) perspective(500px) rotateY(2deg);
+  --box-transform-two: translateX(8px) translateY(8px) perspective(500px) rotateY(-2deg);
+}
+
+/******************************/
+/********** ELEMENTS **********/
+/******************************/
+
+* {
+  transition: all 1s ease;
+}
+
+body {
+  cursor: url("/media/icons/logo.png"), default;
+}
+
+header {
+  width: 102%;
+  height: 140px;
+  margin: -40px 0 0 -1%;
+  background-color: #fff;
+  transform: perspective(500px) rotate(-1deg);
+  border: 2px solid #000;
+  position: fixed;
+  z-index: 2;
+}
+
+section {
+  width: 95vw;
+  min-height: 600px;
+  height: auto;
+  padding: 2.5vh 2.5vw;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+}
+
+.txt-cntnr {
+  height: auto;
+  padding: 50px 50px;
+  text-align: justify;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.hdn-cntnr {
+  min-width: 260px;
+  height: 40px;
+  padding: 30px 30px;
+  margin: 0 8% 0 0;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.row-lmnt {
+  display: flex;
+}
+
+
+/******************************/
+/*********** IMAGES ***********/
+/******************************/
+
+#img1 {
+  width: 70%;
+  height: 550px;
+  margin: 100px 0 0 25%;
+  background: url("/media/images/studio-desk.jpeg") no-repeat center;
+  background-size: cover;
+  transform: perspective(500px) rotateY(-2deg);
+}
+
+#img2 {
+  width: 50%;
+  height: 550px;
+  margin: 100px 0 0 5%;
+  background: url("/media/images/cases/museum.jpeg") no-repeat center;
+  background-size: cover;
+  transform: perspective(500px) rotateY(2deg);
+}
+
+#img3 {
+  min-width: 350px;
+  height: 350px;
+  margin: -280px 0 0 2%;
+  background: url("/media/images/cases/boligportal-dk.jpeg") no-repeat center;
+  background-size: cover;
+  transform: perspective(500px) rotateY(-2deg);
+  z-index: -1;
+}
+
+#img4 {
+  min-width: 350px;
+  height: 350px;
+  margin: -180px 0 0 10%;
+  background: url("/media/images/cases/mocean.jpeg") no-repeat center;
+  background-size: cover;
+  transform: perspective(500px) rotateY(-2deg);
+  z-index: -1;
+}
+
+#img5 {
+  min-width: 350px;
+  height: 350px;
+  margin: -80px 0 0 10%;
+  background: url("/media/images/cases/two_52_blue.png") no-repeat center;
+  background-size: cover;
+  transform: perspective(500px) rotateY(-2deg);
+  z-index: -1;
+}
+
+#img6 {
+  width: 55%;
+  height: 550px;
+  margin: 100px 0 0 40%;
+  background: url("/media/images/cases/sound_art.jpeg") no-repeat center;
+  background-size: cover;
+  transform: perspective(500px) rotateY(-2deg);
+}
+
+
+/******************************/
+/********** TEXTBOXES *********/
+/******************************/
+
+#txtBox1 {
+  width: 650px;
+  margin: -200px 0 50px 5%;
+  box-shadow: var(--lt-box-shadow);
+  transform: var(--box-transform-one);
+}
+
+#txtBox2 {
+  width: 600px;
+  margin: -350px 0 50px 40%;
+  box-shadow: var(--rb-box-shadow);
+  transform: var(--box-transform-two);
+}
+
+#txtBox3 {
+  width: 500px;
+  margin: -650px 0 0 5%;
+  box-shadow: var(--lt-box-shadow);
+  transform: var(--box-transform-one);
+}
+
+
+/******************************/
+/******** HEADING BOXES *******/
+/******************************/
+
+#hdnBox1 {
+  margin: 0;
+  box-shadow: var(--lt-box-shadow);
+  transform: var(--box-transform-one);
+}
+
+#hdnBox2 {
+  margin: 100px 0 0 12%;
+  box-shadow: var(--lt-box-shadow);
+  transform: var(--box-transform-one);
+}
+
+#hdnBox3 {
+  margin: 200px 0 0 12%;
+  box-shadow: var(--lt-box-shadow);
+  transform: var(--box-transform-one);
+}
