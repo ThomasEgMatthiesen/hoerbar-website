@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html {
+  background-color: var(--dark);
+  scroll-behavior: smooth; /* set smooth scroll */
+}
+
+/************************/
+/******* VARIABLES ******/
+/************************/
+
+:root {
+  --light: #F2EEE3;
+  --dark: #0D111C;
+  --blue: #A9B9DB;
+  --brown: #564624;
+  --trans: 1s ease-in-out;
+}
+
+
+/************************/
+/*******   TEXT   *******/
+/************************/
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0.5em;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0 0.5em;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2.5;
+  margin: 0;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+  text-decoration-color: none;
+  text-transform: uppercase;
+  margin: 0.1em 2em 0;
+ }
+
+/************************/
+/********* LOGO *********/
+/************************/
+
+ .logo-cntnr {
+   width: 50%
+ }
+
+
+.logo-cntnr, .one, .two, .three, .four, .five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+ .one {
+   width: 20em;
+   height: 20em;
+   border-radius: 49%;
+   animation: logoSpinR 13.4s infinite;
+   z-index: 1;
+   background-color: var(--dark);
+ }
+
+ .two {
+   width: 16em;
+   height: 16em;
+   margin-right: 2.48em;
+   border-radius: 48%;
+   animation: logoSpinL 11.7s infinite;
+   z-index: 2;
+   background-color: var(--light);
+ }
+
+ .three {
+   width: 12em;
+   height: 12em;
+   margin-right: -1.72em;
+   border-radius: 49%;
+   animation: logoSpinR 9.3s infinite;
+   z-index: 3;
+   background-color: var(--dark);
+ }
+
+ .four {
+   width: 8.8em;
+   height: 8.8em;
+   margin-right: 1.72em;
+   border-radius: 50%;
+   animation: logoSpinL 7.7s infinite;
+   z-index: 4;
+   background-color: var(--light);
+ }
+
+ .five {
+   width: 4em;
+   height: 4em;
+   margin-right: -2.48em;
+   border-radius: 50%;
+   animation: logoSpinL 3.7s infinite;
+   z-index: 5;
+   background-color: var(--dark);
+ }
+
+ @keyframes logoSpinR {
+   100% { transform: rotate(360deg); }
+ }
+
+ @keyframes logoSpinL {
+   100% { transform: rotate(360deg); }
+ }
+
+.ani-paused { animation-play-state: paused; }
+
+.logo-hvr { background-color: var(--blue); }
+
+ /************************/
+ /*****   ELEMENTS   *****/
+ /************************/
+
+.cases-page-cntnr {
+  display: flex;
+}
+
+.cases-col-s {
+   width: calc(30% - 2px); /* subtract border */
+   height: 100vh;
+   min-height: 650px;
+   border-right: 2px solid var(--dark);
+   background-color: var(--light);
+   position: fixed;
+   z-index: 1;
+ }
+
+ .cases-hdng {
+   height: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .cases-case-hdr {
+   background-color: var(--dark);
+   color: var(--brown);
+   width: 100%;
+   height: calc(40% - 2px); /* subtract border */
+   border-top: 2px solid var(--dark);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+.cases-ctrl-cntnr {
+   width: 100%;
+   height: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.cases-ctrl-arrows {
+   width: 40px;
+   filter: invert(100%);
+   -webkit-filter: invert(100%);
+   mix-blend-mode: difference;
+}
+
+.cases-progress-fill {
+  width: 100%;
+  height: 20%; /* fully read is 40% */
+  background-color: var(--light);
+  position: absolute;
+}
+
+.cases-col-l {
+   width: 70%;
+   height: 100vh;
+   overflow: scroll;
+   position: fixed;
+   z-index: 0;
+   left: 30%;
+ }
+
+ #caseHeading {
+   z-index: 0;
+   color: #fff;
+   mix-blend-mode: difference;
+ }
+
+ header {
+   width: calc(100% - 10vw); /* subtract padding */
+   height: 10em; /* same as blog post header size */
+   color: var(--dark);
+   padding: 0 10vw 0 0;
+   border-bottom: 2px solid var(--dark);
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--light);
+ }
+
+.cases-cases-wrpr {
+   width: 70%;
+   height: 400vh;
+   padding: 10em 0 0 30%; /* same as header size and small col width */
+   background-color: var(--dark);
+ }
+
+ .cases-sort-year-cntnr {
+   width: 100%;
+   height: calc(40% - 2px);
+   position: absolute;
+   background-color: var(--blue);
+   color: var(--brown);
+   border-top: 2px solid var(--dark);
+   border-right: 2px solid var(--dark);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 60%;
+   left: 0%;
+   transition: left 1s ease-in-out;
+ }
+
+.sort-year-cntnr-hdn {
+  left: -100%;
+}
+
+ .cases-sort-sbjct-cntnr {
+   height: calc(100vh - 10em); /* subtract header */
+   min-height: calc(650px - 10em); /* same as small col height */
+   padding: 0 5vw;
+   background-color: var(--light);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+ .cases-case-cntnr {
+   min-height: calc(100vh - 10vw - 10em); /* subtract padding and header */
+   padding: 5vw;
+   border-top: 2px solid var(--dark);
+   background-color: var(--light);
+   color: var(--dark);
+  }
+
+.case-dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.cases-footr {
+  background-color: var(--blue);
+  min-height: 180px;
+  height: 6%;
+}
