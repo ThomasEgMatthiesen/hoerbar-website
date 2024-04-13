@@ -1,0 +1,23 @@
+@import "/css/case/case-template.css";
+
+.windfall-main-img {
+    width: 100%;
+    height: 100%;
+    background: url("/media/images/cases/windfall_00.png") no-repeat center;
+    background-size: cover;
+}
+
+.windfall-img-one {
+    background: url("/media/images/cases/windfall_01.png") no-repeat center;
+    background-size: cover;
+}
+
+.windfall-img-two {
+    background: url("/media/images/cases/windfall_02.png") no-repeat center;
+    background-size: cover;
+}
+
+.windfall-img-three {
+    background: url("/media/images/cases/windfall_03.png") no-repeat center;
+    background-size: cover;
+}
