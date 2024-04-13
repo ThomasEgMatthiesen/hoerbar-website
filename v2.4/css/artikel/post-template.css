@@ -1,0 +1,268 @@
+#posttop {
+    min-height: 45em;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2.5em 2.5em 0;
+    margin-top: 7rem;
+    background-color: var(--light);
+}
+
+#posttop h1 {
+    font-size: 3.2rem;
+    padding: 1em 0 .25em;
+}
+
+.post-source-a {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 2;
+    color: var(--light);
+}
+
+.post-source-a a:hover {
+    color: var(--blue);
+}
+
+.post-source-inline {
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.post-info-cntnr {
+    display: flex;
+    padding: 1em 0 0;
+    justify-content: space-between;
+}
+
+.post-info-cntnr p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.post-resume-section {
+    padding: 2.5em 0 0;
+}
+
+.post-resume-section p {
+    line-height: 2;
+    text-align: justify;
+}
+
+.post-txt-section {
+    box-sizing: border-box;
+    padding: 0 2.5em 0;
+    background-color: var(--light);
+}
+
+.post-txt-section p {
+    line-height: 2;
+    text-align: justify;
+}
+
+.post-txt-section p:not(:first-of-type) {
+    text-indent: 1.5em;
+}
+
+.post-txt-section h2 {
+    font-size: 2.5rem;
+    padding: 2em 0 .25em;
+}
+
+.post-resume-section p, .post-txt-section p {
+    font-size: 1.5rem;
+}
+
+
+
+.read-more-cntnr {
+    padding: 10em 0 0;
+    background-color: var(--light);
+}
+
+.read-more-cntnr h3 {
+    font-size: 3.2rem;
+    color: var(--light);
+    padding: 2em 0;
+    text-align: center;
+    background-color: var(--dark);
+}
+
+.read-more-wrpr {
+    width: 100%;
+    min-height: 70em;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--dark);
+}
+
+.read-more-box {
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.read-more-box:last-child {
+    border-top: 2px solid var(--dark);
+}
+
+.read-more-post-link {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.read-more-post-link:hover {
+    background-color: var(--blue);
+}
+
+.read-more-post-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 .5em 0;
+}
+
+.read-more-post-info p {
+    font-size: 1.2rem;
+}
+
+.read-more-post-img {
+    width: 100%;
+    height: 30em;
+}
+
+.read-more-box h4 {
+    padding: .5em 0 0;
+    font-size: 2rem;
+}
+
+
+
+.article-svg-animate {
+    stroke: var(--dark);
+    stroke-width: .8px;
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1500;
+    animation: dash 5s forwards;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+@media only screen and (min-width:400px) {
+    
+}
+
+@media only screen and (min-width:600px) {
+    #posttop {
+        padding: 2.5em 5em 0;
+    }
+
+    .post-txt-section {
+        padding: 0 5em 0;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .post-source-a {
+        font-size: .9rem;
+    }
+
+    .post-txt-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .post-resume-section p, .post-txt-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #posttop {
+        margin-top: 0;
+    }
+
+    .post-info-cntnr p {
+        font-size: 1.2rem;
+    }
+
+    #posttop h1 {
+        font-size: 2.5rem;
+    }
+
+    .post-txt-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .post-resume-section p, .post-txt-section p {
+        font-size: 1rem;
+    }
+
+    .read-more-post-info p {
+        font-size: 1rem;
+    }
+
+    .read-more-post-img {
+        height: 25em;
+    }
+
+    .read-more-box h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    #posttop {
+        padding: 2.5em 7.5em 0;
+    }
+
+    .post-source-a {
+        font-size: .8rem;
+    }
+
+    .post-txt-section {
+        padding: 0 7.5em 0;
+    }
+
+    .read-more-cntnr h3 {
+        font-size: 2.2rem;
+    }
+    
+    .read-more-wrpr {
+        min-height: 30em;
+        flex-direction: row;
+        border-top: 2px solid var(--dark);
+    }
+
+    .read-more-box {
+        flex: 1;
+        box-sizing: border-box;
+    }
+    
+    .read-more-box:last-child {
+        border-top: 0;
+        border-left: 2px solid var(--dark);
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    #posttop {
+        padding: 2.5em 10em 0;
+    }
+
+    .post-txt-section {
+        padding: 0 10em 0;
+    }
+}
