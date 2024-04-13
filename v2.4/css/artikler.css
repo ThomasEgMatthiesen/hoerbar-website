@@ -1,0 +1,366 @@
+/***********************/
+/********* TOP *********/
+/***********************/
+
+#blogtop {
+    height: 50vh;
+    min-height: 25em;
+    margin-top: 7rem;
+    background-color: var(--light);
+    display: none;
+}
+
+.top-video-cntnr {
+    flex: 1 1;
+    position: relative;
+    border-right: 2px solid var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.top-video-cntnr h1 {
+    font-size: 4rem;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+.blog-top-video {
+    position: absolute;
+}
+
+.blog-video-cover {
+    background-color: var(--light);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.blog-quots-cntnr {
+    flex: 1 1;
+    padding: 0 5%;
+    box-sizing: border-box;
+    line-height: 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***********************/
+/******* SENESTE *******/
+/***********************/
+
+#seneste {
+    margin-top: 7rem;
+    background-color: var(--light);
+    border-bottom: 0;
+    overflow: hidden;
+}
+
+.blog-seneste-top, .blog-seneste-mid, .blog-seneste-btm {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-lmnt {
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    height: 40em;
+    border-bottom: 2px solid var(--dark);
+    overflow: hidden;
+    display: flex;
+}
+
+.blog-seneste-top > .blog-col {
+    border-right: 0;
+}
+
+.blog-col {
+    flex: 1 1 25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-lmnt-link {
+    padding: 2.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-lmnt-info {
+    padding: 1vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-lmnt-img {
+    flex: 1 0 auto;
+    background: url("") no-repeat center;
+    background-size: cover;
+}
+
+.blog-lmnt-title {
+    padding: 2.5% 0;
+}
+
+.blog-lmnt-title h3, .blog-lmnt-info p {
+    display: inline-block;
+}
+
+.blog-lmnt-title h3 {
+    font-size: 2.5rem;
+}
+
+.blog-lmnt-info p {
+    font-size: 1.4rem;
+}
+
+
+
+
+/***********************/
+/******** ARKIV ********/
+/***********************/
+
+#arkiv {
+    min-height: calc(25vh - 2px);
+}
+
+#arkiv:hover {
+    background-color: var(--dark);
+}
+
+#arkiv h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(25vh - 2px);
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+#arkiv h5:hover {
+    background-color: var(--dark);
+    color: var(--blue);
+}
+
+.blog-arkiv-lmnt {
+    border-top: 2px solid var(--dark);
+    background-color: var(--light);
+}
+
+.blog-arkiv-lmnt-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em;
+}
+
+.blog-arkiv-lmnt-title {
+    font-size: 1.2rem;
+    flex: 3 0;
+}
+
+.blog-arkiv-lmnt-date {
+    font-size: 1.1rem;
+    display: flex;
+}
+
+
+
+@media only screen and (min-width:400px) {
+    
+}
+
+@media only screen and (min-width:600px) {
+    .blog-quots-cntnr {
+        width: 65%;
+    }
+    
+    .blog-lmnt {
+        height: 50em;
+    }
+
+    .blog-arkiv-lmnt-link {
+        padding: 2.5em 5em;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #blogtop {
+        display: flex;
+    }
+
+    #seneste {
+        margin-top: 0;
+    }
+
+    .blog-seneste-top, .blog-seneste-btm {
+        flex-direction: row;
+    }
+
+    .blog-lmnt {
+        flex: 1 2 auto;
+    }
+
+    .blog-col .blog-lmnt {
+        height: 25em;
+    }
+    
+    .blog-seneste-top > .blog-lmnt {
+        border-right: 2px solid var(--dark);   
+    }
+
+    .blog-seneste-btm > .blog-lmnt {
+        border-left: 2px solid var(--dark);
+    }
+    
+    .blog-lmnt-title h3 {
+        font-size: 2.2rem;
+    }
+
+    .blog-col .blog-lmnt-title h3, .blog-lmnt-info p, .blog-arkiv-lmnt-title {
+        font-size: 1rem;
+    }
+
+    .blog-seneste-mid .blog-lmnt-title h3 {
+        font-size: 2.5rem;
+    }
+
+    .blog-col .blog-lmnt-info p, .blog-arkiv-lmnt-date {
+        font-size: .8rem;
+    }
+
+    .blog-seneste-mid .blog-lmnt-info p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #blogtop {
+        margin-top: 0;
+    }
+
+    .top-video-cntnr h1 {
+        font-size: 4rem;
+    }
+
+    .blog-seneste-top, .blog-seneste-btm {
+        flex-direction: column;
+    }
+    
+    .blog-seneste-top > .blog-lmnt {
+        height: 50em;
+        border-right: 0;
+    }
+
+    .blog-seneste-btm > .blog-lmnt {
+        height: 50em;
+        border-left: 0;   
+    }
+    
+    .blog-col .blog-lmnt {
+        height: 50em;
+    }
+
+    .blog-lmnt-title h3 {
+        font-size: 2.5rem;
+    }
+
+    .blog-col .blog-lmnt-title h3 {
+        font-size: 2.5rem;
+    }
+
+    .blog-seneste-mid .blog-lmnt-title h3 {
+        font-size: 2.5rem;
+    }
+
+    .blog-lmnt-info p {
+        font-size: 1.2rem;
+    }
+
+    .blog-col .blog-lmnt-info p {
+        font-size: 1.2rem;
+    }
+
+    .blog-seneste-mid .blog-lmnt-info p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .top-video-cntnr h1 {
+        font-size: 4rem;
+    }
+
+    .blog-col {
+        flex: 2 1;
+    }
+
+    .blog-seneste-top, .blog-seneste-btm, .blog-seneste-mid {
+        flex-direction: row;
+    }
+
+    .blog-seneste-top > .blog-lmnt, .blog-seneste-btm > .blog-lmnt {
+        height: 50em;
+        flex: 3 1;
+    }
+
+    .blog-col .blog-lmnt {
+        height: 25em;
+    }
+
+    .blog-seneste-mid .blog-lmnt {
+        height: 25em;
+        flex: 1 1;
+        border-right: 2px solid var(--dark);
+    }
+
+    .blog-seneste-mid .blog-lmnt:last-child {
+        border-right: 0;
+    }
+
+    .blog-seneste-top > .blog-lmnt {
+        border-right: 2px solid var(--dark);
+    }
+
+    .blog-seneste-btm > .blog-lmnt {
+        border-left: 2px solid var(--dark);
+    }
+
+    .blog-lmnt-title h3 {
+        font-size: 2.2rem;
+    }
+
+    .blog-col .blog-lmnt-title h3 {
+        font-size: 1.4rem;
+    }
+
+    .blog-seneste-mid .blog-lmnt-title h3, .blog-arkiv-lmnt-title {
+        font-size: 1.2rem;
+    }
+
+    .blog-lmnt-info p {
+        font-size: 1.1rem;
+    }
+
+    .blog-col .blog-lmnt-info p {
+        font-size: .9rem;
+    }
+
+    .blog-seneste-mid .blog-lmnt-info p {
+        font-size: .7rem;
+    }
+    
+    .blog-arkiv-lmnt-date {
+        font-size: 1rem;
+    }
+}
