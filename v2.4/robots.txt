@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /media/*
+Allow: /media/icons/logo.png
+Sitemap: https://www.hoerbar.dk/sitemap.xml
