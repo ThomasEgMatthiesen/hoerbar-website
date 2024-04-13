@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Altering Spaces",
+    "customer": "Forest 0.1",
+    "services": "// Lydkunst",
+    "theme": "Lydkunst",
+    "year": "2023",
+    "internalLink": "/case/altering-spaces/",
+    "imgUrl": "/media/images/cases/altering_spaces_00.jpeg",
+    "resume": "Altering Spaces er et lydkunstprojekt, hvor vi arbejder med at indlejre digital lydproduktion i naturlige soundscapes."
+  },
+  {
+    "title": "Lyden af at finde et hjem",
+    "customer": "Boligportal",
+    "services": "// Lydidentitet, Lydlogo, Brandmusik",
+    "theme": "Lydbranding",
+    "year": "2023",
+    "internalLink": "/case/boligportal/",
+    "imgUrl": "/media/images/cases/boligportal_00.jpg",
+    "resume": "BoligPortal tilbyder danskerne en tryg og sikker måde at finde en ny lejebolig på. Vi har hjulpet BoligPortal med at udforme deres lydidentitet, således at deres auditive output afspejler deres brandværdier."
+  },
+  {
+    "title": "Legevenligt børnetøj",
+    "customer": "Ildhu CPH",
+    "theme": "Lydbranding",
+    "year": "2022",
+    "internalLink": "/case/ildhu-cph/",
+    "imgUrl": "/media/images/cases/ildhu_cph_00.jpg",
+    "resume": "Ildhu CPH er et nyere børnetøjsmærke, der sætter sikkerhed og synlighed i højsædet. I forbindelse med deres opstartskampagne ønskede de at få defineret deres lydidentitet."
+  },
+  {
+    "title": "Seriøs kommunikation",
+    "customer": "Venstre",
+    "theme": "Lyddesign",
+    "year": "2022",
+    "internalLink": "/case/venstre/",
+    "imgUrl": "/media/images/cases/venstre_00.png",
+    "resume": "Partiet Venstre ønskede at gøre aktiv brug af lyden, til at styrke deres indhold på sociale medier og i deres podcast. Vi har designet dem et lydlogo og produceret musik til deres podcast."
+  },
+  {
+    "title": "Efterforskning af minder",
+    "customer": "Mind Diver",
+    "theme": "Digital lyd",
+    "year": "2022",
+    "internalLink": "/case/mind-diver/",
+    "imgUrl": "/media/images/cases/minddiver_00.jpeg",
+    "resume": "Mind Diver er et førstepersons-detektivspil. Som spiller gennemsøger du en kvindes minder efter spor der kan løse et mysterie, om hvad der skete med hendes kæreste efter en fest."
+  },
+  {
+    "title": "Et eksplorativt adventurespil",
+    "customer": "Windfall",
+    "theme": "Digital lyd",
+    "year": "2021",
+    "internalLink": "/case/windfall/",
+    "imgUrl": "/media/images/cases/windfall_00.png",
+    "resume": "Procedural-generated exploration indiespil med fokus på hurtig og flydende bevægelse. Som spiller rejser man gennem en iturevet verden med målet om at forhindre dens totale destruktion."
+  }
+]
