@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /media/images/
+Disallow: /media/svg/
+Disallow: /media/video/
