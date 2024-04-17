@@ -1,0 +1,463 @@
+:root {
+    --light: #ffffff;
+    --dark: #000000;
+    --pop: #AC7B84;
+}
+
+body, html {
+    background-color: var(--dark);
+}
+
+a, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--pop);
+}
+
+p {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+    font-weight: 300;
+    color: var(--dark);
+}
+
+/* Page cover */
+
+.page-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--light);
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+    z-index: 5;
+}
+
+/* Header */
+header {
+    background-color: var(--light);
+    height: 7.5em;
+    box-sizing: border-box;
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    width: 6em;
+    height: auto;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding-left: 1.5em;
+}
+
+nav li a, .active-link {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.active-link {
+    text-decoration: underline;
+    line-height: 1;
+    margin-top: 0.04em; /*0.08em;*/
+}
+
+/* Pattern */
+.pattern-cntnr {
+    position: relative;
+    background-color: var(--light);
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 0vh;
+    z-index: 0;
+}
+
+.svg-animate {
+    stroke: var(--dark);
+    stroke-width: .9px;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 0;
+    animation: dash 10s infinite;
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: stroke 1s;
+}
+
+@keyframes dash {
+    50% {
+        stroke-dashoffset: 1500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Main */
+main {
+    position: relative;
+    background-color: var(--light);
+    padding: 0 1.5em;
+    min-height: calc(100vh - 10em);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Projects */
+.prjct-cntnr {
+    box-sizing: border-box;
+    padding: 0 0 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.prjct-cntnr:nth-child(odd) {
+    flex-direction: column-reverse;
+}
+
+.prjct-img {
+    position: relative;
+    width: 100%;
+    height: calc(100vw - 3em);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prjct-vid {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.prjct-vid-active {
+    opacity: 1;
+}
+
+.prjct-img-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background-color: var(--light);
+}
+
+.prjct-cntrl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: var(--dark);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.prjct-cntrl p {
+    font-family: 'Palanquin Dark', sans-serif;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 400;
+    text-align: center;
+    color: var(--light);
+    margin-top: -.3em;
+    cursor: pointer;
+}
+
+.prjct-cntrl-hvr {
+    background-color: var(--pop);
+}
+
+.prjct-cntnr:nth-child(2) .prjct-img {
+    background: url("/media/images/genhoer.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.prjct-cntnr:nth-child(3) .prjct-img {
+    background: url("/media/images/altering_spaces.png") no-repeat center;
+    background-size: cover;
+}
+
+.prjct-info {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.prjct-cntnr:nth-child(2) .prjct-info {
+    padding: .5em 0 0 0;
+}
+
+.prjct-cntnr:nth-child(3) .prjct-info {
+    padding: .5em 0 0 0;
+}
+
+.prjct-info h2 {
+    font-weight: 500;
+    margin: 0.25em 0;
+}
+
+/* Info */
+.info-cntnr {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-col:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 2.5em 0;
+}
+
+.txt-cntnr {
+    padding: 0 0 1.5em 0;
+}
+
+.info-col h3 {
+    font-size: 1.2em;
+    margin: 0 0 0.2em 0;
+}
+
+.info-col p {
+    font-size: 1em;
+}
+
+.info-col a {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+    font-weight: 300;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    box-sizing: border-box;
+    padding: 2.5em 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--light);
+}
+
+.ftr-heading {
+    width: 6em;
+    filter: invert(100%);
+}
+
+
+@media only screen and (min-width:400px) {
+    header {
+        padding: 0 2.5em;
+    }
+    .heading, nav {
+        width: 10em;
+    }
+    nav ul {
+        justify-content: space-between;
+    }
+    nav li {
+        padding-left: 0;
+    }
+    nav li a, .active-link {
+        font-size: 1.2em;
+    }
+    .active-link {
+        margin-top: 0.08em;
+    }
+    .pattern-cntnr {
+        padding-top: 10vh;
+    }
+    .svg-animate {
+        stroke-width: .8px;
+    }
+    main {
+        padding: 0 2.5em;
+    }
+    .prjct-img {
+        height: calc(100vw - 5em);
+    }
+    footer {
+        padding: 2.5em 2.5em;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .pattern-cntnr {
+        padding-top: 0;
+    }
+    .svg-animate {
+        stroke-width: .7px;
+    }
+    .prjct-img {
+        height: calc(75vw - 5em);
+    }
+    .txt-cntnr {
+        padding: 0 0 2.5em 0;
+    }
+    .info-col:nth-child(1) p {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        height: 10em;
+        padding: 0 5em;
+    }
+
+    .heading, nav {
+        width: 12em;
+    }
+
+    .pattern-cntnr {
+        margin-top: -44px;
+    }
+
+    .svg-animate {
+        stroke-width: .6px;
+    }
+
+    main {
+        padding: 0 5em;
+    }
+    .prjct-img {
+        height: calc(75vw - 10em);
+    }
+
+    footer {
+        padding: 2.5em 5em;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .svg-animate {
+        stroke-width: 0.5px;
+    }
+    .prjct-cntnr {
+        min-height: 35em;
+        height: 75vh;
+        flex-direction: row;
+    }
+    .prjct-cntnr:nth-child(odd) {
+        flex-direction: row;
+    }
+    .prjct-cntnr a {
+        width: 60%;
+        height: auto
+    }
+    .prjct-img {
+        width: 100%;
+        height: 100%
+    }
+    .prjct-info {
+        width: 40%;
+    }
+    .prjct-cntnr:nth-child(2) .prjct-info {
+        padding: 0 0 0 2.5em;
+    }
+    .prjct-cntnr:nth-child(3) .prjct-info {
+        padding: 0 2.5em 0 0;
+        text-align: end;
+    }
+    .info-cntnr {
+        flex-direction: row;
+    }
+    .info-col:nth-child(1) {
+        flex: 2;
+        box-sizing: border-box;
+        padding: 0 1.25em 2.5em 0;
+    }
+    .info-col:nth-child(2) {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 10em 0 2.5em 1.25em;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: end;
+    }
+    .info-col a {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    :root {
+        font-size: 20px;
+    }
+    .svg-animate {
+        stroke-width: .4px;
+    }
+
+    
+}
+
+@media only screen and (min-width:1600px) {
+    :root {
+        font-size: 26px;
+    }
+    .svg-animate {
+        stroke-width: .3px;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    :root {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width:2400px) {
+    :root {
+        font-size: 38px;
+    }
+}
+
+/* Remove hover on touch devices */
+
+@media (hover: none) {
+    a:hover { color: inherit; }
+}
+
