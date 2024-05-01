@@ -1,4 +1,4 @@
-# Hørbar website
+# Hørbar website archive
 
 ## Version 3.1
 ![www.hoerbar.dk screenshot](images/v3.1.png)
