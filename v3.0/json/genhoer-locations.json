@@ -4,7 +4,7 @@
         "location": "Grindsted Station",
         "date": "1. juni - 31. august 2024",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "imgUrl": "/media/images/grindsted.jpeg"
+        "imgUrl": "https://raw.githubusercontent.com/ThomasEgMatthiesen/hoerbar-website/main/v3.0/media/images/grindsted.jpeg"
       },
       {
         "location": "Kirkestrædet i Køge",
